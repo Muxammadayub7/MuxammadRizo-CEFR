@@ -6,7 +6,310 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MuxammadaRizo CEFR</title>
   <style>
-    *{margin:0;padding:0;box-sizing:border-box}.hero{background-image:url(../images/wrapper/hero__logo.avif);max-width:370px;margin-left:auto;margin-right:auto;background-repeat:no-repeat;background-size:cover;background-position:center;position:relative}.hero__container{padding-top:16px;padding-bottom:200px;margin-left:10px;margin-right:12px}.hero__content{max-width:243px;width:100%;display:flex;align-items:center;gap:8px;justify-content:center;padding:9px 0;background:linear-gradient(180deg,#fffffd 0%,#e2f3ff 100%);box-shadow:0 2px 15px 0 #0000001a;border-radius:8px;margin-left:auto;margin-bottom:63px}.hero__date{font-family:OnestRegular;font-weight:400;font-size:16px;line-height:100%;color:#000}.hero__title{font-family:BebasNeue;font-weight:400;font-size:36px;line-height:120%;margin-left:20px;background:linear-gradient(180deg,#577DFF 0%,#2E4DBA 100%);color:#fff0;background-clip:text;margin-bottom:4px}.hero__description{font-family:OnestRegular;font-weight:400;font-size:16px;line-height:100%;color:#000;margin-left:20px;margin-bottom:8px}.hero__inner{max-width:179px;background:linear-gradient(180deg,#FFFFFD 0%,#E2F3FF 100%);box-shadow:0 4px 10px 0 #00000026;border-radius:10px;display:flex;align-items:center;gap:12px;padding:8px 15px 9px 12px;margin-left:4px}.inner__title{font-family:OnestBold;font-weight:700;font-size:18px;line-height:100%;text-transform:uppercase;color:#3D68FD;margin-bottom:5px}.inner__description{font-family:OnestRegular;font-weight:400;font-size:14px;line-height:130%;color:#000}.logo{position:absolute;bottom:0;right:0}.btn{font-family:BebasNeue;font-weight:400;font-size:28px;line-height:100%;text-transform:uppercase;color:#fff;background-color:#FF282C;box-shadow:0 2.5px 0 0 #C7131B;box-shadow:0 30px 40px 0 #FFFFFF40 inset;box-shadow:0 4px 10px 0 #FF282C66;border:none;border-radius:50px;max-width:327px;width:100%;display:flex;align-items:center;justify-content:center;gap:8px;padding:30px 0;position:absolute;bottom:-10px;z-index:11;left:20px;cursor:pointer}.new{padding-top:26px;padding-bottom:17px}.new__container{max-width:348px;margin-left:auto;margin-right:auto}.new__content{max-width:267px;width:100%;margin-left:auto;margin-right:auto;background-color:#3353B1;display:flex;align-items:center;padding-left:20px;border-radius:27px;position:relative;margin-bottom:14px}.wrapper__row{position:relative;z-index:11}.row__title{font-family:OnestSemibold;font-size:20px;line-height:1;color:#FFF;margin-bottom:4px;margin-top:14px}.new__description{font-family:OnestRegular;font-weight:400;font-size:12px;line-height:120%;color:#FFF;margin-bottom:8px}.timer{font-family:OnestBold;font-weight:700;font-size:32px;line-height:100%;color:#FFF;margin-bottom:12px}.clock{position:absolute;z-index:2;right:0}.bottom__title{font-family:BebasNeue;font-weight:400;font-size:36px;line-height:120%;color:#000;margin-bottom:8px;margin-left:12px}.inner{margin-bottom:16px}.inner__row__col{max-width:348px;margin-left:auto;margin-right:auto;border:2px solid #3353B1;display:flex;align-items:center;gap:16px;border-radius:15px;margin-bottom:8px;padding:9px 40px 9px 0;overflow:hidden}.box{background:radial-gradient(50% 50% at 50% 50%,#3D68FD 0%,#3353B1 100%);max-width:69px;height:71px;width:100px;border-radius:15px;margin-left:-7px;display:flex;align-items:center;justify-content:center;position:relative}.row__text{font-family:OnestRegular;font-weight:400;font-size:16px;line-height:140%;color:#000}.box__title{font-family:BigShouldersDisplay;font-weight:700;font-size:42px;line-height:100%;text-transform:uppercase;background:linear-gradient(131.77deg,#FFFFFF 27.92%,#B7B7B7 186.56%);color:#fff0;background-clip:text;margin-left:17px}.img__1{position:absolute;top:-2px;right:-10px}.img__2{position:absolute;left:8px;bottom:-8px}.new__btn{font-family:BebasNeue;font-weight:400;font-size:28px;line-height:100%;text-transform:uppercase;color:#fff;background-color:#FF282C;box-shadow:0 2.5px 0 0 #C7131B;box-shadow:0 30px 40px 0 #FFFFFF40 inset;box-shadow:0 4px 10px 0 #FF282C66;border:none;border-radius:50px;max-width:327px;width:100%;display:flex;align-items:center;justify-content:center;gap:8px;padding:30px 0;cursor:pointer;margin-top:8px;margin-left:auto;margin-right:auto}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    .hero {
+      background-image: url(../images/wrapper/hero__logo.avif);
+      max-width: 375px;
+      margin-left: auto;
+      margin-right: auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative
+    }
+
+    .hero__container {
+      padding-top: 16px;
+      padding-bottom: 200px;
+      margin-left: 10px;
+      margin-right: 12px
+    }
+
+    .hero__content {
+      max-width: 243px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      justify-content: center;
+      padding: 9px 0;
+      background: linear-gradient(180deg, #fffffd 0%, #e2f3ff 100%);
+      box-shadow: 0 2px 15px 0 #0000001a;
+      border-radius: 8px;
+      margin-left: auto;
+      margin-bottom: 63px
+    }
+
+    .hero__date {
+      font-family: OnestRegular;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      color: #000
+    }
+
+    .hero__title {
+      font-family: BebasNeue;
+      font-weight: 400;
+      font-size: clamp(32px, 4vw, 36px);
+      line-height: 120%;
+      margin-left: 20px;
+      background: linear-gradient(180deg, #577DFF 0%, #2E4DBA 100%);
+      color: #fff0;
+      background-clip: text;
+      margin-bottom: 4px
+    }
+
+    .hero__description {
+      font-family: OnestRegular;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      color: #000;
+      margin-left: 20px;
+      margin-bottom: 8px
+    }
+
+    .hero__inner {
+      max-width: 179px;
+      background: linear-gradient(180deg, #FFFFFD 0%, #E2F3FF 100%);
+      box-shadow: 0 4px 10px 0 #00000026;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 15px 9px 12px;
+      margin-left: 4px
+    }
+
+    .inner__title {
+      font-family: OnestBold;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #3D68FD;
+      margin-bottom: 5px
+    }
+
+    .inner__description {
+      font-family: OnestRegular;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 130%;
+      color: #000
+    }
+
+    .logo {
+      position: absolute;
+      bottom: 0;
+      right: 0
+    }
+
+    .btn {
+      font-family: BebasNeue;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #FF282C;
+      box-shadow: 0 2.5px 0 0 #C7131B;
+      box-shadow: 0 30px 40px 0 #FFFFFF40 inset;
+      box-shadow: 0 4px 10px 0 #FF282C66;
+      border: none;
+      border-radius: 50px;
+      max-width: 327px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 30px 0;
+      bottom: -10px;
+      z-index: 11;
+      cursor: pointer;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 11;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (max-width:343px) {
+      .btn {}
+    }
+
+    .new {
+      padding-top: 26px;
+      padding-bottom: 17px
+    }
+
+    .new__container {
+      max-width: 348px;
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    .new__content {
+      max-width: 267px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #3353B1;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      border-radius: 27px;
+      position: relative;
+      margin-bottom: 14px
+    }
+
+    .wrapper__row {
+      position: relative;
+      z-index: 11
+    }
+
+    .row__title {
+      font-family: OnestSemibold;
+      font-size: 20px;
+      line-height: 1;
+      color: #FFF;
+      margin-bottom: 4px;
+      margin-top: 14px
+    }
+
+    .new__description {
+      font-family: OnestRegular;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 120%;
+      color: #FFF;
+      margin-bottom: 8px
+    }
+
+    .timer {
+      font-family: OnestBold;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 100%;
+      color: #FFF;
+      margin-bottom: 12px
+    }
+
+    .clock {
+      position: absolute;
+      z-index: 2;
+      right: 0
+    }
+
+    .bottom__title {
+      font-family: BebasNeue;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 120%;
+      color: #000;
+      margin-bottom: 8px;
+      margin-left: 12px
+    }
+
+    .inner {
+      margin-bottom: 16px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .inner__row__col {
+      max-width: 348px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 2px solid #3353B1;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border-radius: 15px;
+      margin-bottom: 8px;
+      padding: 9px 40px 9px 0;
+      overflow: hidden
+    }
+
+    .box {
+      background: radial-gradient(50% 50% at 50% 50%, #3D68FD 0%, #3353B1 100%);
+      max-width: 69px;
+      height: 71px;
+      width: 100px;
+      border-radius: 15px;
+      margin-left: -7px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative
+    }
+
+    .row__text {
+      font-family: OnestRegular;
+      font-weight: 400;
+      font-size: clamp(10px, 4vw, 15px);
+      line-height: 140%;
+      color: #000
+    }
+
+    .box__title {
+      font-family: BigShouldersDisplay;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 100%;
+      text-transform: uppercase;
+      background: linear-gradient(131.77deg, #FFFFFF 27.92%, #B7B7B7 186.56%);
+      color: #fff0;
+      background-clip: text;
+      margin-left: 17px
+    }
+
+    .img__1 {
+      position: absolute;
+      top: -2px;
+      right: -10px
+    }
+
+    .img__2 {
+      position: absolute;
+      left: 8px;
+      bottom: -8px
+    }
+
+    .new__btn {
+      font-family: BebasNeue;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #FF282C;
+      box-shadow: 0 2.5px 0 0 #C7131B;
+      box-shadow: 0 30px 40px 0 #FFFFFF40 inset;
+      box-shadow: 0 4px 10px 0 #FF282C66;
+      border: none;
+      border-radius: 50px;
+      max-width: 327px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 30px 0;
+      cursor: pointer;
+      margin-top: 8px;
+      margin-left: auto;
+      margin-right: auto
+    }
   </style>
   <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
   <noscript>
@@ -43,7 +346,7 @@
             loading="lazy" decoding="async" alt="submit" class="submit"></button>
       </div>
     </section>
-  
+
     <section class="new">
       <div class="new__container">
         <div class="new__content">
@@ -56,17 +359,21 @@
               <p class="timer" id="timer">01:59</p>
             </div>
           </div>
-          <img src="./images/hero/clock.avif" width="140" height="210" style="height: auto; border-radius: 27px;"  loading="lazy" decoding="async" alt="clock" class="clock">
+          <img src="./images/hero/clock.avif" width="140" height="210" style="height: auto; border-radius: 27px;"
+            loading="lazy" decoding="async" alt="clock" class="clock">
         </div>
         <h2 class="bottom__title">Nega vebinarda <br> qatnashishingiz kerak?</h2>
         <div class="inner">
           <div class="inner__row__col">
             <div class="box">
-              <img src="./images/hero/img__1.avif" width="30" height="30" loading="lazy" decoding="async" alt="img__1" class="img__1">
+              <img src="./images/hero/img__1.avif" width="30" height="30" loading="lazy" decoding="async" alt="img__1"
+                class="img__1">
               <h3 class="box__title">01</h3>
-              <img src="./images/hero/img__2.avif" width="30" height="30" loading="lazy" decoding="async" alt="img__2" class="img__2">
+              <img src="./images/hero/img__2.avif" width="30" height="30" loading="lazy" decoding="async" alt="img__2"
+                class="img__2">
             </div>
-            <p class="row__text">Writing & Speaking uchun <br> <b>tayyor shablonlar</b> — oson va <br> yuqori ball olish strategiyasi</p>
+            <p class="row__text">Writing & Speaking uchun <br> <b>tayyor shablonlar</b> — oson va <br> yuqori ball olish
+              strategiyasi</p>
           </div>
           <div class="inner__row__col">
             <div class="box">
@@ -76,7 +383,8 @@
               <img src="./images/hero/img__4.avif" width="30" height="30" loading="lazy" decoding="async" alt="img__2"
                 class="img__2">
             </div>
-            <p class="row__text">Writing & Speaking uchun <br> <b>tayyor shablonlar</b> — oson va <br> yuqori ball olish strategiyasi</p>
+            <p class="row__text">Writing & Speaking uchun <br> <b>tayyor shablonlar</b> — oson va <br> yuqori ball olish
+              strategiyasi</p>
           </div>
           <div class="inner__row__col">
             <div class="box">
@@ -86,12 +394,13 @@
               <img src="./images/hero/img__6.avif" width="30" height="30" loading="lazy" decoding="async" alt="img__2"
                 class="img__2">
             </div>
-            <p class="row__text">Writing & Speaking uchun <br> <b>tayyor shablonlar</b> — oson va <br> yuqori ball olish strategiyasi</p>
+            <p class="row__text">Writing & Speaking uchun <br> <b>tayyor shablonlar</b> — oson va <br> yuqori ball olish
+              strategiyasi</p>
           </div>
         </div>
       </div>
-      <button class="new__btn" id="open">Bepul qatnashaman<img src="./images/hero/submit.svg" width="22" height="22" loading="lazy"
-          decoding="async" alt="submit" class="submit"></button>
+      <button class="new__btn" id="open">Bepul qatnashaman<img src="./images/hero/submit.svg" width="22" height="22"
+          loading="lazy" decoding="async" alt="submit" class="submit"></button>
       </div>
     </section>
   </main>
@@ -116,7 +425,7 @@
             autocomplete="name" />
           <p class="homeFormErrorText" id="nameError" style="display: none">❌ Ismingizni kiriting!</p>
         </div>
-  
+
         <div class="HomeFormRow">
           <label class="HomeFormRowLabel" for="phone">Telefon raqamingiz:</label>
           <div class="phone-input-container">
@@ -133,7 +442,7 @@
           </div>
           <p class="homeFormErrorText" id="phoneError" style="display:none">❌ Telefon raqam mos emas!</p>
         </div>
-  
+
         <button type="submit" class="HomeFormBtn" id="submitBtn">DAVOM ETISH</button>
       </form>
     </div>
