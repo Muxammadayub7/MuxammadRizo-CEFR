@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MuxammadaRizo CEFR</title>
+  <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="./css/main.css" />
+  </noscript>
+
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero__container">
+      <div class="hero__content">
+        <img src="./images/hero/calendar.svg" width="15" height="16" loading="lazy" decoding="async" alt="calendar"
+          class="calendar" />
+        <p class="hero__date">7-8-Aprel | Soat: 20:00 da</p>
+      </div>
+      <h2 class="hero__title">Maydagi CEFR imtihonini <br> o'tkazib yubormang!</h2>
+      <p class="hero__description">Samarali tayyorlanish <br> strategiyasini bilib oling!</p>
+      <div class="hero__inner">
+        <div class="inner__row">
+          <h3 class="inner__title">Sovg’a</h3>
+          <p class="inner__description">
+            CEFR Master <br> Pack. PDF <br> qo’llanmasi
+          </p>
+        </div>
+        <img src="./images/hero/book.avif" width="53" height="80" loading="lazy" decoding="async" alt="book"
+          class="book">
+      </div>
+      <img src="./images/hero/logo.avif" width="370" height="218" fetchpriority="high" decoding="async" alt="logo"
+        class="logo" style="height: auto;">
+      <button class="btn" id="open">Bepul qatnashaman<img src="./images/hero/submit.svg" width="22" height="22"
+          loading="lazy" decoding="async" alt="submit" class="submit"></button>
+    </div>
+  </section>
+
+  <section class="new">
+    <div class="new__container">
+      <div class="new__content">
+        <div class="content__wrapper">
+          <div class="wrapper__row">
+            <h3 class="row__title">Vaqt ketdi</h3>
+            <p class="new__description">Bepul qatnashishga ulguring</p>
+          </div>
+          <div class="timer-container">
+            <p class="timer" id="timer">01:59</p>
+          </div>
+        </div>
+        <img src="./images/hero/clock.avif" width="140" height="210" style="height: auto; border-radius: 27px;"  loading="lazy" decoding="async" alt="clock" class="clock">
+      </div>
+      <h2 class="bottom__title">Nega vebinarda <br> qatnashishingiz kerak?</h2>
+      <div class="inner">
+        <div class="inner__row__col">
+          <div class="box">
+            <img src="./images/hero/img__1.avif" width="30" height="30" loading="lazy" decoding="async" alt="img__1" class="img__1">
+            <h3 class="box__title">01</h3>
+            <img src="./images/hero/img__2.avif" width="30" height="30" loading="lazy" decoding="async" alt="img__2" class="img__2">
+          </div>
+          <p class="row__text">Writing & Speaking uchun <br> <b>tayyor shablonlar</b> — oson va <br> yuqori ball olish strategiyasi</p>
+        </div>
+        <div class="inner__row__col">
+          <div class="box">
+            <img src="./images/hero/img__3.avif" width="30" height="30" loading="lazy" decoding="async" alt="img__1"
+              class="img__1">
+            <h3 class="box__title">02</h3>
+            <img src="./images/hero/img__4.avif" width="30" height="30" loading="lazy" decoding="async" alt="img__2"
+              class="img__2">
+          </div>
+          <p class="row__text">Writing & Speaking uchun <br> <b>tayyor shablonlar</b> — oson va <br> yuqori ball olish strategiyasi</p>
+        </div>
+        <div class="inner__row__col">
+          <div class="box">
+            <img src="./images/hero/img__5.avif" width="30" height="30" loading="lazy" decoding="async" alt="img__1"
+              class="img__1">
+            <h3 class="box__title">03</h3>
+            <img src="./images/hero/img__6.avif" width="30" height="30" loading="lazy" decoding="async" alt="img__2"
+              class="img__2">
+          </div>
+          <p class="row__text">Writing & Speaking uchun <br> <b>tayyor shablonlar</b> — oson va <br> yuqori ball olish strategiyasi</p>
+        </div>
+      </div>
+    </div>
+    <button class="new__btn" id="open">Bepul qatnashaman<img src="./images/hero/submit.svg" width="22" height="22" loading="lazy"
+        decoding="async" alt="submit" class="submit"></button>
+    </div>
+  </section>
+
+  <div id="registrationModal" class="homeModal" style="display: none">
+    <div class="homeModalOverlay"></div>
+    <div class="homeFormContainer">
+      <button class="closeButton" id="closeModalBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
+          <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+      <div class="homeFormTop">
+        <h1 class="homeFormTopTitle">
+          Ro'yxatdan o'tish uchun <br> ma'lumotlaringizni kiriting!
+        </h1>
+      </div>
+      <form id="registrationForm" name="contact-form">
+        <div class="HomeFormRow">
+          <label class="HomeFormRowLabel" for="name">Ismingiz:</label>
+          <input class="HomeFormRowInput" type="text" id="name" name="name" placeholder="Ismingizni kiriting"
+            autocomplete="name" />
+          <p class="homeFormErrorText" id="nameError" style="display: none">❌ Ismingizni kiriting!</p>
+        </div>
+  
+        <div class="HomeFormRow">
+          <label class="HomeFormRowLabel" for="phone">Telefon raqamingiz:</label>
+          <div class="phone-input-container">
+            <button type="button" class="selected-country" id="selectedCountry">
+              <div id="selectedCountryFlag" style="display: flex; align-items: center;"></div>
+              <span class="selected-code" id="selectedCountryCodeText">+998</span>
+            </button>
+            <div class="country-dropdown" id="countryDropdown" style="display:none"></div>
+            <div class="phone-field" style="flex: 1;">
+              <input class="HomeFormRowInput phone-input" type="tel" id="phone" name="phone" inputmode="numeric"
+                placeholder="88 888 88 88" autocomplete="tel"
+                style="border: none; background-color: transparent; padding-left: 5px; width: 100%;" />
+            </div>
+          </div>
+          <p class="homeFormErrorText" id="phoneError" style="display:none">❌ Telefon raqam mos emas!</p>
+        </div>
+  
+        <button type="submit" class="HomeFormBtn" id="submitBtn">DAVOM ETISH</button>
+      </form>
+    </div>
+  </div>
+
+
+  <script defer src="./js/phoneFormatter.js"></script>
+  <script defer src="./js/app.js"></script>
+
+</body>
+
+</html>
